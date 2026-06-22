@@ -122,15 +122,6 @@ if (is_object($zahtev)) {
 <body>
     <button class="print-btn" onclick="window.print()">Štampaj</button>
     
-    <div class="header">
-        <h1>Univerzitet u Novom Sadu</h1>
-        <h2>Tehnički fakultet "Mihajlo Pupin" Zrenjanin</h2>
-        <p>Šk. 2025/26</p>
-        <p style="margin-top: 10px;">Naziv predmeta: Veb programiranje</p>
-        <p>Ime i prezime: Selena Kirhner</p>
-        <p>Broj indeksa: SI 2/23</p>
-    </div>
-    
     <h1 style="text-align: center; font-size: 16pt;">ZAHTEV ZA UDOMLJAVANJE</h1>
     
     <div class="section-title">Master deo (podaci o udomitelju)</div>
