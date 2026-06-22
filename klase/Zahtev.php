@@ -20,7 +20,6 @@ class Zahtev extends OsnovniModel {
         $this->stavkeObj = new StavkaZahteva();
     }
     
-    // Getteri
     public function getId() { return $this->id; }
     public function getIme() { return $this->ime; }
     public function getPrezime() { return $this->prezime; }
@@ -30,7 +29,6 @@ class Zahtev extends OsnovniModel {
     public function getIdKorisnik() { return $this->id_korisnik; }
     public function getStavke() { return $this->stavkeLista; }
 
-    // Setteri
     public function setId($id) { $this->id = $id; }
     public function setIme($ime) { $this->ime = $ime; }
     public function setPrezime($prezime) { $this->prezime = $prezime; }
