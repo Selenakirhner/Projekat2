@@ -97,7 +97,7 @@
                                 <input type="text" name="napomena[]" value="<?php echo $_POST['napomena'][$i] ?? ''; ?>" placeholder="npr. veseo, razigran">
                             </div>
                             
-                            <button type="button" class="btn-remove" onclick="ukloniStavku(this)">✕</button>
+                            <button type="button" class="btn-remove" onclick="ukloniStavku(this)">-</button>
                         </div>
                     <?php endfor; ?>
                 </div>
@@ -147,7 +147,7 @@
                 <input type="text" name="napomena[]" placeholder="npr. veseo, razigran">
             </div>
             
-            <button type="button" class="btn-remove" onclick="ukloniStavku(this)">✕</button>
+            <button type="button" class="btn-remove" onclick="ukloniStavku(this)">-</button>
         `;
         
         container.appendChild(row);
