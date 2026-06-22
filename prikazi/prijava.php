@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="resursi/stilovi/stil.css">
 </head>
 <body>
-    //admin/admin123 i selena/selena123
     <div class="login-container">
         <h1>Prijava na sistem</h1>
         <h2>Udomljavanje životinja</h2>
