@@ -61,18 +61,14 @@ class Zahtev extends OsnovniModel {
         try {
             $sql = "SELECT COUNT(*) broj
                     FROM zahtev
-                    WHERE ime = ?
-                    AND prezime = ?
-                    AND telefon = ?";
+                    WHERE id_korisnik = ?";
 
             $provera = $this->baza->upit($sql, [
-                $podaci['ime'],
-                $podaci['prezime'],
-                $podaci['telefon']
+                $podaci['id_korisnik']
             ])->fetch(PDO::FETCH_ASSOC);
 
-            if ($provera['broj'] > 0) {
-                throw new Exception('Zahtev već postoji.');
+            if ($provera['broj'] >= 2) {
+                throw new Exception('Jedan korisnik može imati najviše 2 zahteva.');
             }
             
             $rezultat = $this->baza->pozoviProceduru('sp_UnosZahteva', [
